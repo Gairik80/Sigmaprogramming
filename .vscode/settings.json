@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.list.smoothScrolling": true,
+    "workbench.list.scrollByPage": true,
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "prettier.bracketSameLine": true,
+    "prettier.enableDebugLogs": false
+}
