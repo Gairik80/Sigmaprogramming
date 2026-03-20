@@ -10,7 +10,7 @@
 }
 :root {
   --clr-1: #000000;
-  --clr-2: #855cff;
+  --clr-2: #3CB371;
   --clr-3: #ff0000;
   --clr-4: #ffffff;
 }
@@ -35,27 +35,27 @@ body{
   font-family: "Lexend",sans-serif;
 
   background-color: var(--clr-2);
-  background-blend-mode:multiply;
+  background-blend-mode: multiply;
 }
 .container{
-  border-style: solid;
+  border: 2.5px solid var(--clr-3);
   border-radius: 5px;
-  border-color: var(--clr-3);
+   
   margin-left: 7.5%;
   margin-right: 7.5%;
   padding: 5px 0px;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   
   transition: all 0.75s;
   
   position: relative;
 }
 .container:hover{
+  border: 2.5px solid var(--clr-1);
   background-color: rgba( 0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
   box-shadow: 0px 15px 0px 2.5px var(--clr-3);
-  border-color: var(--clr-4);
   
   cursor: default;
 }
@@ -75,8 +75,9 @@ body{
   cursor: pointer;
 }
 .pill:hover{
-  color: var(--clr-3);                      transform: translateY(-10px);
-  background-color: var(--clr-1);           scale: 1.25;
+  border-radius: 2.5px;
+  color: var(--clr-4);                      transform: translateY(0px);
+  background-color: var(--clr-3);           scale: 1.25;
 }
 
 .wrapper{  display: flex;  flex-wrap: wrap;}
@@ -168,7 +169,7 @@ body{
   }
   .desc-txt:hover{
     border-color: var(--clr-3);
-    box-shadow:  10px 0px 7.5px 2.5px var(--clr-2);
+    box-shadow:  15px 0px 0px -10px var(--clr-2);  border-radius: 5px;  overflow: hidden;
   }
   .socials{
     margin: 5px 25px;
